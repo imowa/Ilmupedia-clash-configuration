@@ -129,8 +129,9 @@ dns:
     - +.media.dssott.com
 proxy-providers:
   proxies-vmess:
-    type: file
-    path: /proxies.yaml
+    type: http
+    path: ./proxies/proxies.yaml
+    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/proxies.yaml
     interval: 3600
     health-check:
       enable: true
@@ -138,8 +139,9 @@ proxy-providers:
       # lazy: true
       url: http://connect.rom.miui.com/generate_204
   sshkit:
-    type: file
-    path: /sshkit.yaml
+    type: http
+    path: ./proxies/sshkit.yaml
+    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/sshkit.yaml
     interval: 3600
     health-check:
       enable: true
@@ -147,14 +149,15 @@ proxy-providers:
       # lazy: true
       url: http://connect.rom.miui.com/generate_204
   sshocean:
-    type: file
-    path: /sshocean.yaml
+    type: http
+    path: ./proxies/sshocean.yaml
+    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/sshocean.yaml
     interval: 3600
     health-check:
       enable: true
+      url: http://www.gstatic.com/generate_204
       interval: 300
-      # lazy: true
-      url: http://connect.rom.miui.com/generate_204
+ 
 proxy-groups:
   - name: select
     type: select
