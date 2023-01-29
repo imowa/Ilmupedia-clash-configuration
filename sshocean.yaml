@@ -1,0 +1,81 @@
+proxies:
+  - name: sshocean-id8-4-Feb
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: a1a8b5ce-1d6f-4c7d-938f-2c76612011d9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: id8.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: id8.v2rayserv.com
+    udp: true
+  - name: sshocean-id7-4-Feb
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 0e8e8dae-33f1-4d9a-9d8c-60daa2c4bc7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: id7.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: id7.v2rayserv.com
+    udp: true
+  - name: sshocean-melbi-1-Feb
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: d5a3f61e-94a0-4abb-853e-eb005f6c1c36
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg3-mlb.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: sg3-mlb.v2rayserv.com
+    udp: true
+  - name: sshocean-ovh-1-Feb
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 5fd6b0e5-a7fd-4c17-902e-b309d2e30cd4
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sgovh1.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: sgovh1.v2rayserv.com
+    udp: true
+  - name: sshocean-erwinzer0
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: a3e78445-e72a-48d0-9ede-ba023147bec2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: id1.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: id1.v2rayserv.com
+    udp: true
