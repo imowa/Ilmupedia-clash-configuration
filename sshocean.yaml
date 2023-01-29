@@ -1,36 +1,4 @@
 proxies:
-  - name: sshocean-id8-4-Feb
-    server: 104.26.7.171
-    port: 80
-    type: vmess
-    uuid: a1a8b5ce-1d6f-4c7d-938f-2c76612011d9
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: id8.v2rayserv.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
-      headers:
-        Host: id8.v2rayserv.com
-    udp: true
-  - name: sshocean-id7-4-Feb
-    server: 104.26.7.171
-    port: 80
-    type: vmess
-    uuid: 0e8e8dae-33f1-4d9a-9d8c-60daa2c4bc7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: id7.v2rayserv.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
-      headers:
-        Host: id7.v2rayserv.com
-    udp: true
   - name: sshocean-melbi-1-Feb
     server: 104.26.7.171
     port: 80
