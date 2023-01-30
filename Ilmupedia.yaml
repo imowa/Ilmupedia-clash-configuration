@@ -173,7 +173,6 @@ proxy-groups:
       - BEST-PING-LOAD-BALANCE
   - name: BEST-PING-LOAD-BALANCE
     type: url-test
-    url: http://hi.bonds.id/ping
     interval: 300
     strategy: consistent-hashing
     url: http://connect.rom.miui.com/generate_204
