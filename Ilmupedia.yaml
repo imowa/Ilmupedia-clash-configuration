@@ -176,7 +176,8 @@ proxy-groups:
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
-    tolerance: 50                                     proxies:
+    tolerance: 50                                 
+    proxies:
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN
       - LOAD-BALANCE
