@@ -161,7 +161,6 @@ proxy-providers:
 proxy-groups:
   - name: select
     type: select
-    interval: 300
     use:
       - proxies-vmess
       - sshocean
@@ -174,8 +173,9 @@ proxy-groups:
       - BEST-PING-LOAD-BALANCE
   - name: BEST-PING-LOAD-BALANCE
     type: url-test
-    url: http://hi.bonds.id/ping
+    url: http://connect.rom.miui.com/generate_204
     interval: 300
+    strategy: consistent-hashing
     tolerance: 50                       
     proxies:
       - LOAD-BALANCE-SSHKIT
