@@ -161,6 +161,7 @@ proxy-providers:
 proxy-groups:
   - name: select
     type: select
+    url: http://connect.rom.miui.com/generate_204
     use:
       - proxies-vmess
       - sshocean
@@ -173,9 +174,10 @@ proxy-groups:
       - BEST-PING-LOAD-BALANCE
   - name: BEST-PING-LOAD-BALANCE
     type: url-test
+    url: http://connect.rom.miui.com/generate_204
     interval: 300
     strategy: consistent-hashing
-    url: http://connect.rom.miui.com/generate_204
+    tolerance: 50                       
     proxies:
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN

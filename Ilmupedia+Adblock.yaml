@@ -161,6 +161,7 @@ proxy-providers:
 proxy-groups:
   - name: select
     type: select
+    url: http://connect.rom.miui.com/generate_204
     use:
       - proxies-vmess
       - sshocean
