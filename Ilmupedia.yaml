@@ -172,6 +172,14 @@ proxy-groups:
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN
       - BEST-PING-LOAD-BALANCE
+  - name: BEST-PING-LOAD-BALANCE
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50                                     proxies:
+      - LOAD-BALANCE-SSHKIT
+      - LOAD-BALANCE-SSHOCEAN
+      - LOAD-BALANCE
   - name: LOAD-BALANCE
     type: load-balance
     interval: 300
@@ -193,15 +201,6 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshocean
-  - name: BEST-PING-LOAD-BALANCE
-    type: url-test
-    url: http://hi.bonds.id/ping
-    interval: 300
-    tolerance: 50
-    proxies:
-      - LOAD-BALANCE-SSHKIT
-      - LOAD-BALANCE-SSHOCEAN
-      - LOAD-BALANCE
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - MATCH,select
