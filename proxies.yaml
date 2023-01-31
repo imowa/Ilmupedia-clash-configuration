@@ -16,7 +16,7 @@ proxies:
         Host: sg-7.0rd.net
     udp: true
   
-  - name: R80:Vmess Singapore Melbi 3 2023-02-07
+  - name: Vmess Singapore Melbi 3 2023-02-07
     server: sg-9.0rd.net
     port: 80
     type: vmess
