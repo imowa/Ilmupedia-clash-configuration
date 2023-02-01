@@ -169,19 +169,23 @@ proxy-groups:
       - sshkit
     proxies:
       - DIRECT
-      - LOAD-BALANCE
+      - LOAD-BALANCE-FASTSSH
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN
-      - BEST-PING-LOAD-BALANCE
-  - name: BEST-PING-LOAD-BALANCE
+      - BEST-PING
+  - name: BEST-PING
     type: url-test
     url: http://connect.rom.miui.com/generate_204
     interval: 180
+    use:
+      - proxies-vmess
+      - sshocean
+      - sshkit
     proxies:
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN
       - LOAD-BALANCE
-  - name: LOAD-BALANCE
+  - name: LOAD-BALANCE-FASTSSH
     type: load-balance
     interval: 300
     strategy: consistent-hashing
