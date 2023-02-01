@@ -184,7 +184,7 @@ proxy-groups:
     proxies:
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN
-      - LOAD-BALANCE
+      - LOAD-BALANCE-FASTSSH
   - name: LOAD-BALANCE-FASTSSH
     type: load-balance
     interval: 300
