@@ -1,4 +1,20 @@
 proxies:
+  - name: sshocean-erwinzer0
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: fbcf1e77-2806-40b8-a740-d93dd9a937bb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sgovh1.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: sgovh1.v2rayserv.com
+    udp: true
   - name: sshocean-melbi-8-Feb
     server: 104.26.7.171
     port: 80
@@ -14,20 +30,4 @@ proxies:
       path: GET-:ws://104.26.7.171/vmess
       headers:
         Host: sg1-mlb.v2rayserv.com
-    udp: true
-  - name: sshocean-ovh-1-Feb
-    server: 104.26.7.171
-    port: 80
-    type: vmess
-    uuid: 5fd6b0e5-a7fd-4c17-902e-b309d2e30cd4
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sgovh1.v2rayserv.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
-      headers:
-        Host: sgovh1.v2rayserv.com
     udp: true
