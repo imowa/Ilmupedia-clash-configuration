@@ -1,4 +1,21 @@
 proxies:
+proxies:
+  - name: Vmess Singapore OVH 3 2023-02-09
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 178d4ea0-a2f1-11ed-b031-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg-10.0rd.net
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess/5gkr1sdp
+      headers:
+        Host: sg-10.0rd.net
+    udp: true
   - name: Vmess Singapore AMP-2 2023-02-07
     server: 104.26.7.171
     port: 80
