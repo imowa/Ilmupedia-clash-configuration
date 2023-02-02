@@ -163,10 +163,6 @@ proxy-groups:
     type: url-test
     url: http://connect.rom.miui.com/generate_204
     interval: 180
-    use:
-      - proxies-vmess
-      - sshocean
-      - sshkit
     proxies:
       - LOAD-BALANCE-SSHKIT
       - LOAD-BALANCE-SSHOCEAN
