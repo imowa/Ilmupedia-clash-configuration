@@ -1,5 +1,4 @@
 proxies:
-proxies:
   - name: Vmess Singapore OVH 3 2023-02-09
     server: 104.26.7.171
     port: 80
