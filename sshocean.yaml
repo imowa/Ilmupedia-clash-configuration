@@ -1,5 +1,5 @@
 proxies:
-  - name: sshocean-erwinzer0
+  - name: sshocean-ovh1-9-Feb
     server: 104.26.7.171
     port: 80
     type: vmess
