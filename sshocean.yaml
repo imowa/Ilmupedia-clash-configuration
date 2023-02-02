@@ -1,4 +1,20 @@
 proxies:
+  - name: sshocean-melbi3-9-Feb
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 999b14f4-f2c3-482f-878d-10b929283384
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg3-mlb.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess
+      headers:
+        Host: sg3-mlb.v2rayserv.com
+    udp: true
   - name: sshocean-ovh1-9-Feb
     server: 104.26.7.171
     port: 80
@@ -15,7 +31,7 @@ proxies:
       headers:
         Host: sgovh1.v2rayserv.com
     udp: true
-  - name: sshocean-melbi-8-Feb
+  - name: sshocean-melbi2-8-Feb
     server: 104.26.7.171
     port: 80
     type: vmess
