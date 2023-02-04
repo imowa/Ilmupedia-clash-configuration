@@ -161,7 +161,7 @@ proxy-providers:
 proxy-groups:
   - name: LOAD-BALANCE
     type: load-balance
-    interval: 300
+    interval: 180
     strategy: consistent-hashing
     url: http://connect.rom.miui.com/generate_204
     use:
