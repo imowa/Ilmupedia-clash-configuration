@@ -178,7 +178,7 @@ rule-providers:
   adblocker-2+porn:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts
+    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/Adblock+porn-filter.txt
     path: ./providers/rule-provider_clash.yaml
     interval: 86400
 rules:
