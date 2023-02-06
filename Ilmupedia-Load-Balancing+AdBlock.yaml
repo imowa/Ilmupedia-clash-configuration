@@ -179,7 +179,7 @@ rule-providers:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/Adblock+porn-filter.txt
-    path: ./providers/rule-provider_clash.yaml
+    path: ./providers/adblocker-2+porn.yaml
     interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
