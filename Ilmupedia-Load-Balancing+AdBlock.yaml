@@ -169,13 +169,20 @@ proxy-groups:
       - sshkit
       - sshocean
 rule-providers:
-  clash:
+  adblocker-1:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
     path: ./providers/rule-provider_clash.yaml
     interval: 86400
+  adblocker-2+porn:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts
+    path: ./providers/rule-provider_clash.yaml
+    interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
-  - RULE-SET,clash,REJECT
+  - RULE-SET,adblocker-1,REJECT
+  - RULE-SET,adblocker-2+porn,REJECT
   - MATCH,LOAD-BALANCE
