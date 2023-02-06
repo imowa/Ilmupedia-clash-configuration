@@ -168,14 +168,6 @@ proxy-groups:
       - proxies-vmess
       - sshkit
       - sshocean
-rule-providers:
-  clash:
-    type: http
-    behavior: domain
-    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
-    path: ./providers/rule-provider_clash.yaml
-    interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
-  - RULE-SET,clash,REJECT
   - MATCH,LOAD-BALANCE
