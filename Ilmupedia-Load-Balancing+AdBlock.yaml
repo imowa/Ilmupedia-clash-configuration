@@ -187,10 +187,15 @@ rule-providers:
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/whitelist.txt
     path: ./providers/whitelist.yaml
     interval: 86400
-
+  my-filter:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/My-Filter.txt
+    path: ./providers/whitelist.yaml
+    interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - RULE-SET,adblocker-1,REJECT
-  - RULE-SET,adblocker-2+porn,REJECT
+  - RULE-SET,my-filter,REJECT
   - RULE-SET,whitelist,LOAD-BALANCE
   - MATCH,LOAD-BALANCE

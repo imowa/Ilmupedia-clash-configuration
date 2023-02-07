@@ -1,0 +1,5 @@
+payload:
+  - nhentai.net
+  - pornhub.com
+  - '+.pornhub.+'
+  - '+.nhentai.+'
