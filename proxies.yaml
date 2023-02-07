@@ -1,5 +1,5 @@
 proxies:
-  - name: opentunnel.net-erwinzer0
+  - name: opentunnel.net-erwinzer0-14-2
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -11,11 +11,11 @@ proxies:
     servername: idv-3.openv2ray.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-erwinzer0
+      path: GET-:ws://104.26.7.171/vmess/u/opentunnel.net-erwinzer0
       headers:
         Host: idv-3.openv2ray.com
     udp: true
-  - name: Vmess Singapore Melbi 3 2023-02-14
+  - name: Vmess-Singapore-Melbi-3-2023-02-14
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -31,7 +31,7 @@ proxies:
       headers:
         Host: sg-9.0rd.net
     udp: true
-  - name: Vmess Singapore AMP-2 2023-02-14
+  - name: Vmess-Singapore-AMP-2-2023-02-14
     server: sg-7.0rd.net
     port: 80
     type: vmess
@@ -47,7 +47,7 @@ proxies:
       headers:
         Host: 104.26.7.171
     udp: true
-  - name: Vmess Singapore OVH 3 2023-02-09
+  - name: Vmess-Singapore-OVH-3-2023-02-09
     server: 104.26.7.171
     port: 80
     type: vmess
