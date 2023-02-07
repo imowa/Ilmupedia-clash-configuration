@@ -191,7 +191,7 @@ rule-providers:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/My-Filter.txt
-    path: ./providers/whitelist.yaml
+    path: ./providers/my-filter.yaml
     interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
