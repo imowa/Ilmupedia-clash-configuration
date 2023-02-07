@@ -185,7 +185,7 @@ rule-providers:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/whitelist.txt
-    path: ./providers/adblocker-2+porn.yaml
+    path: ./providers/whitelist.yaml
     interval: 86400
 
 rules:
