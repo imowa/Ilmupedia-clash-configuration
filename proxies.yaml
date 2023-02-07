@@ -1,4 +1,36 @@
 proxies:
+  - name: Vmess Singapore Melbi 3 2023-02-14
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 68e2ea40-a6ec-11ed-b438-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg-9.0rd.net
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess/j3nf85o2
+      headers:
+        Host: sg-9.0rd.net
+    udp: true
+  - name: Vmess Singapore AMP-2 2023-02-14
+    server: sg-7.0rd.net
+    port: 80
+    type: vmess
+    uuid: d2e2dfa0-a6eb-11ed-b432-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 104.26.7.171
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.26.7.171/vmess/49upmy8w
+      headers:
+        Host: 104.26.7.171
+    udp: true
   - name: Vmess Singapore OVH 3 2023-02-09
     server: 104.26.7.171
     port: 80
@@ -15,32 +47,6 @@ proxies:
       headers:
         Host: sg-10.0rd.net
     udp: true
-  - name: Vmess Singapore AMP-2 2023-02-07
-    server: 104.26.7.171
-    port: 80
-    type: vmess
-    uuid: aeb090e0-a126-11ed-b938-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sg-7.0rd.net
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.26.7.171/vmess/hjb38szd
-      headers:
-        Host: sg-7.0rd.net
-    udp: true
-  
-  - name: Vmess Singapore Melbi 3 2023-02-07
-    server: sg-9.0rd.net
-    port: 80
-    type: vmess
-    uuid: 9be12770-a127-11ed-b333-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
     servername: 104.26.7.171
     network: ws
     ws-opts:
