@@ -27,7 +27,7 @@ proxies:
     servername: idv-3.openv2ray.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-erwinzer0
+      path: /u/opentunnel.net-erwinzer0/vmess
       headers:
         Host: idv-3.openv2ray.com
     udp: true
@@ -48,7 +48,7 @@ proxies:
         Host: sg-9.0rd.net
     udp: true
   - name: Vmess-Singapore-AMP-2-2023-02-14
-    server: sg-7.0rd.net
+    server: 104.26.7.171
     port: 80
     type: vmess
     uuid: d2e2dfa0-a6eb-11ed-b432-205c6d5f5d78
@@ -56,12 +56,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-    servername: 104.26.7.171
+    servername: sg-7.0rd.net
     network: ws
     ws-opts:
       path: GET-:ws://104.26.7.171/vmess/49upmy8w
       headers:
-        Host: 104.26.7.171
+        Host: sg-7.0rd.net
     udp: true
   - name: Vmess-Singapore-OVH-3-2023-02-09
     server: 104.26.7.171
