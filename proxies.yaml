@@ -27,7 +27,7 @@ proxies:
     servername: idv-3.openv2ray.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-erwinzer0/vmess
+      path: GET-:ws://104.26.7.171/vmess/u/opentunnel.net-erwinzer0
       headers:
         Host: idv-3.openv2ray.com
     udp: true
