@@ -132,31 +132,31 @@ proxy-providers:
     type: http
     path: ./proxies/proxies.yaml
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/proxies.yaml
-    interval: 3600
+    interval: 900
     health-check:
       enable: true
-      interval: 300
+      interval: 180
       # lazy: true
       url: http://connect.rom.miui.com/generate_204
   sshkit:
     type: http
     path: ./proxies/sshkit.yaml
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/sshkit.yaml
-    interval: 3600
+    interval: 900
     health-check:
       enable: true
-      interval: 300
+      interval: 180
       # lazy: true
       url: http://connect.rom.miui.com/generate_204
   sshocean:
     type: http
     path: ./proxies/sshocean.yaml
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/sshocean.yaml
-    interval: 3600
+    interval: 900
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 300
+      interval: 180
  
 proxy-groups:
   - name: select
@@ -187,32 +187,24 @@ proxy-groups:
       - LOAD-BALANCE-FASTSSH
   - name: LOAD-BALANCE-FASTSSH
     type: load-balance
-    interval: 300
+    interval: 180
     strategy: consistent-hashing
     url: http://connect.rom.miui.com/generate_204
     use:
       - proxies-vmess
   - name: LOAD-BALANCE-SSHKIT
     type: load-balance
-    interval: 300
+    interval: 180
     strategy: consistent-hashing
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshkit
   - name: LOAD-BALANCE-SSHOCEAN
     type: load-balance
-    interval: 300
+    interval: 180
     strategy: consistent-hashing
     url: http://connect.rom.miui.com/generate_204
     use:
-      - sshocean
-rule-providers:
-  clash:
-    type: http
-    behavior: domain
-    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
-    path: ./providers/rule-provider_clash.yaml
-    interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - MATCH,select
