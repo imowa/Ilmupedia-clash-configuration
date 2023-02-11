@@ -181,10 +181,6 @@ proxy-groups:
       - proxies-vmess
       - sshocean
       - sshkit
-    proxies:
-      - LOAD-BALANCE-SSHKIT
-      - LOAD-BALANCE-SSHOCEAN
-      - LOAD-BALANCE-FASTSSH
   - name: LOAD-BALANCE-FASTSSH
     type: load-balance
     interval: 180
