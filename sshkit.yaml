@@ -1,5 +1,5 @@
 proxies:
-  - name: sg-lb.vhax.net
+  - name: sg-lb.vhax.net-2-17
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -7,11 +7,59 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/erwinzer0/63e85fd670b42/
+      path: /sshkit/erwinzer0/63e590763655e/
       headers:
         Host: sg-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net-2-16
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/erwinzer0/63e3d7c66e3e5/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: sg4-v2ray.sshkit.org_2023-02-23
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg4-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/1678781623/63cfa9e5d3696/
+      headers:
+        Host: sg4-v2ray.sshkit.org
+    udp: true
+  - name: sg1-v2ray.sshkit.org
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/1678781623/63cf646aac2e0/
+      headers:
+        Host: sg1-v2ray.sshkit.org
     udp: true
