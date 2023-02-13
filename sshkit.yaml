@@ -11,7 +11,7 @@ proxies:
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/erwinzer0/63e85fd670b42/
+      path: /sshkit/sjshdh/63e9f9270aa4b/
       headers:
         Host: sg-lb.vhax.net
     udp: true
