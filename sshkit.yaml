@@ -7,11 +7,27 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
       path: /sshkit/erwinzer0/63e85fd670b42/
       headers:
         Host: sg-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/erwinzer0-id/63e9f021cc236/
+      headers:
+        Host: id-lb.vhax.net
     udp: true
