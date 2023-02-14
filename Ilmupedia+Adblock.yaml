@@ -178,9 +178,9 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     interval: 180
     use:
-      - proxies-vmess
-      - sshocean
       - sshkit
+      - sshocean
+      - proxies-vmess
   - name: LOAD-BALANCE-FASTSSH
     type: load-balance
     interval: 180

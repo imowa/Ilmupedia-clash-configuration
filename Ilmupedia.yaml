@@ -178,9 +178,9 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     interval: 180
     use:
-      - proxies-vmess
-      - sshocean
       - sshkit
+      - sshocean
+      - proxies-vmess
   - name: LOAD-BALANCE-FASTSSH
     type: load-balance
     interval: 180
@@ -202,13 +202,6 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshocean
-rule-providers:
-  clash:
-    type: http
-    behavior: domain
-    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
-    path: ./providers/rule-provider_clash.yaml
-    interval: 86400
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - MATCH,select
