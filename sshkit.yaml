@@ -31,7 +31,7 @@ proxies:
       headers:
         Host: id-lb.vhax.net
     udp: true
-    - name: sg4-v2ray.sshkit.org_2023-02-23
+  - name: sg4-v2ray.sshkit.org_2023-02-23
     server: 104.26.7.171
     port: 80
     type: vmess
