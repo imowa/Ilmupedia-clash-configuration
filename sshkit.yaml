@@ -1,6 +1,5 @@
 proxies:
-  proxies:
-  - name: id-lb.vhax.net
+  - name: wuuush
     server: 104.26.7.171
     port: 80
     type: vmess
