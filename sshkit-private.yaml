@@ -1,5 +1,5 @@
 proxies:
-  - name: id-lb.vhax.net
+  - name: sg-lb.vhax.net
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -8,12 +8,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-    servername: id-lb.vhax.net
+    servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/erwinzer03/63eb6af7bfb9b/
+      path: /sshkit/Sgsgjssh/63eb402e04826/
       headers:
-        Host: id-lb.vhax.net
+        Host: sg-lb.vhax.net
     udp: true
   - name: v2ray2.udpgw.com
     server: 104.26.7.171
