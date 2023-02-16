@@ -16,22 +16,6 @@ proxies:
         Host: sg-lb.vhax.net
     udp: true
   - {name: id-lb.vhax.net, server: 104.26.7.171, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, sni: N.n, alterId: 0, cipher: auto, tls: , skip-cert-verify: false, udp: true, network: ws, ws-opts: {path: /sshkit/Imgoodyo/63ec4c10848c0/, headers: {Host: id-lb.vhax.net,}}}
-  - name: sg-lb.vhax.net
-    server: 104.26.7.171
-    port: 80
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sg-lb.vhax.net
-    network: ws
-    ws-opts:
-      path: /sshkit/Sgsgjssh/63eb402e04826/
-      headers:
-        Host: sg-lb.vhax.net
-    udp: true
   - name: v2ray2.udpgw.com
     server: 104.26.7.171
     port: 80
