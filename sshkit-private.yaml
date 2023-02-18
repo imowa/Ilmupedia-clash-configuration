@@ -11,26 +11,9 @@ proxies:
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/please/63ee30bd1994c/
+      path: /sshkit/Tuturu/63f06a8399efb/
       headers:
         Host: sg-lb.vhax.net
-    udp: true
-  - {name: id-lb.vhax.net, server: 104.26.7.171, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, sni: N.n, alterId: 0, cipher: auto, tls: , skip-cert-verify: false, udp: true, network: ws, ws-opts: {path: /sshkit/Imgoodyo/63ec4c10848c0/, headers: {Host: id-lb.vhax.net,}}}
-  - name: v2ray2.udpgw.com
-    server: 104.26.7.171
-    port: 80
-    type: vmess
-    uuid: 1260b95d-171f-44ad-8dfb-6975a8749209
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: v2ray2.udpgw.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
-      headers:
-        Host: v2ray2.udpgw.com
     udp: true
   - name: sg4-v2ray.sshkit.org_2023-02-23
     server: 104.26.7.171
