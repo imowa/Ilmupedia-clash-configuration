@@ -1,4 +1,21 @@
 proxies:
+  proxies:
+  - name: Vmess Singapore AMP-2 2023-02-26
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 2d11cad0-b037-11ed-b132-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-7.0rd.net
+    network: ws
+    ws-opts:
+      path: /4eolgdjh
+      headers:
+        Host: sg-7.0rd.net
+    udp: true
   - name: sg-lb.vhax.net
     server: 104.26.7.171
     port: 80
