@@ -1,5 +1,5 @@
 proxies:
-  - name: wuuush
+  - name: sg-lb.vhax.net
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -8,12 +8,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: id-lb.vhax.net
+    servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/Mamahelll/63ec81714768a/
+      path: /sshkit/mamaohhhmama/63f172146e607/
       headers:
-        Host: id-lb.vhax.net
+        Host: sg-lb.vhax.net
     udp: true
   - {name: v2ray2.udpgw.com, server: 104.26.7.171, port: 80, type: vmess, uuid: 4a50f95f-1f03-409f-94d0-7d1d68c9124e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: v2ray2.udpgw.com, network: ws, ws-opts: {path: GET-:ws://104.26.7.171/vmess, headers: {Host: v2ray2.udpgw.com}}, udp: true}
   - name: sg4-v2ray.sshkit.org_2023-02-23
