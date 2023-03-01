@@ -145,7 +145,8 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshkit
-    proxies:                                                     - DIRECT
+    proxies:                                              
+      - DIRECT
       - BEST-PING 
   - name: BEST-PING
     type: url-test
