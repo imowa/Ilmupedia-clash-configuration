@@ -145,11 +145,11 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshkit
-    proxies:
-      - DIRECT
+    proxies:                                                     - DIRECT
+      - LOAD-BALANCE-SSHKIT
+      - BEST-PING                                            - name: BEST-PING
     type: url-test
-    url: http://connect.rom.miui.com/generate_204
-    interval: 180
+    url: http://connect.rom.miui.com/generate_204              interval: 180
     use:
       - sshkit
 rules:
