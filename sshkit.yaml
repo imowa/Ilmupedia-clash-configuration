@@ -1,18 +1,17 @@
 proxies:
-  - name: dynamic-sg3b.obfs.xyz
+  - name: v2ray1.udpgw.com
     server: 104.26.7.171
-    port: 80
+    port: 443
     type: vmess
-    uuid: c7473bc0-0e58-4021-9bc2-6c1eceafea69
+    uuid: 77529b84-d32a-476e-956c-c2952c73a4a9
     alterId: 0
     cipher: auto
-    tls: false 
-    skip-cert-verify: false 
-    servername: dynamic-sg3b.obfs.xyz
+    tls: true
+    skip-cert-verify: true
+    servername: v2ray1.udpgw.com
     network: ws
     ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
+      path: /worryfree
       headers:
-        Host: dynamic-sg3b.obfs.xyz
+        Host: v2ray1.udpgw.com
     udp: true
-  - {name: v2ray2.udpgw.com, server: 104.26.7.171, port: 80, type: vmess, uuid: 4a50f95f-1f03-409f-94d0-7d1d68c9124e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: v2ray2.udpgw.com, network: ws, ws-opts: {path: GET-:ws://104.26.7.171/vmess, headers: {Host: v2ray2.udpgw.com}}, udp: true}
