@@ -1,4 +1,36 @@
 proxies:
+  - name: Vmess Singapore AMP-2 2023-03-15
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: 634a7e70-bd5d-11ed-b639-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg-7.0rd.net
+    network: ws
+    ws-opts:
+      path: /m2hb1pr5
+      headers:
+        Host: sg-7.0rd.net
+    udp: true
+  - name: sg1-v2ray.sshkit.org
+    server: 104.26.7.171
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/1678781623/64059f2f6b769/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
   - name: v2ray1.udpgw.com
     server: 104.26.7.171
     port: 443
