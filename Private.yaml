@@ -128,16 +128,6 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxy-providers:
-  proxies-vmess:
-    type: http
-    path: ./proxies/proxies.yaml
-    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/proxies.yaml
-    interval: 900
-    health-check:
-      enable: true
-      interval: 180
-      # lazy: true
-      url: http://connect.rom.miui.com/generate_204
   sshkit:
     type: http
     path: ./proxies/sshkit.yaml
@@ -148,15 +138,6 @@ proxy-providers:
       interval: 180
       # lazy: true
       url: http://connect.rom.miui.com/generate_204
-  sshocean:
-    type: http
-    path: ./proxies/sshocean.yaml
-    url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/sshocean.yaml
-    interval: 900
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 180
  
 proxy-groups:
   - name: select
@@ -164,14 +145,10 @@ proxy-groups:
     interval: 180
     url: http://connect.rom.miui.com/generate_204
     use:
-      - proxies-vmess
-      - sshocean
       - sshkit
     proxies:
       - DIRECT
-      - LOAD-BALANCE-FASTSSH
       - LOAD-BALANCE-SSHKIT
-      - LOAD-BALANCE-SSHOCEAN
       - BEST-PING
   - name: BEST-PING
     type: url-test
@@ -179,29 +156,13 @@ proxy-groups:
     interval: 180
     use:
       - sshkit
-      - sshocean
-      - proxies-vmess
-  - name: LOAD-BALANCE-FASTSSH
-    type: load-balance
-    interval: 180
-    strategy: consistent-hashing
-    url: http://connect.rom.miui.com/generate_204
-    use:
-      - proxies-vmess
   - name: LOAD-BALANCE-SSHKIT
     type: load-balance
-    interval: 180
+    interval: 300
     strategy: consistent-hashing
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshkit
-  - name: LOAD-BALANCE-SSHOCEAN
-    type: load-balance
-    interval: 180
-    strategy: consistent-hashing
-    url: http://connect.rom.miui.com/generate_204
-    use:
-      - sshocean
 rules:
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - MATCH,select
