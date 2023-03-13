@@ -1,35 +1,35 @@
 proxies:
-  - name: sshocean-sheheh
+  - name: Vmess Indonesia Herza Limit 2023-03-16
     server: 104.26.7.171
     port: 80
     type: vmess
-    uuid: cd21d052-6bbe-47db-8551-f1205c1b30dd
+    uuid: 1b6bb940-c199-11ed-b239-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
-    servername: sg3.v2rayserv.com
+    skip-cert-verify: true
+    servername: id-1.0rd.net
     network: ws
     ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
+      path: /no10pmbq
       headers:
-        Host: sg3.v2rayserv.com
+        Host: id-1.0rd.net
     udp: true
-  - name: sshocean-erwin1
+  - name: Vmess Singapore HE-1 2023-03-20
     server: 104.26.7.171
     port: 80
     type: vmess
-    uuid: 1a9dd491-3717-4844-91f0-c8e7d25ee04f
+    uuid: 400010c0-c198-11ed-b637-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
-    servername: sg1-mlb.v2rayserv.com
+    skip-cert-verify: true
+    servername: sg-1.0rd.net
     network: ws
     ws-opts:
-      path: GET-:ws://104.26.7.171/vmess
+      path: /l3swtj05
       headers:
-        Host: sg1-mlb.v2rayserv.com
+        Host: sg-1.0rd.net
     udp: true
   - name: Vmess Singapore AMP-2 2023-03-15
     server: 104.26.7.171
@@ -62,20 +62,4 @@ proxies:
       path: /sshkit/1678781623/64059f2f6b769/
       headers:
         Host: sg1-v2ray.sshkit.org
-    udp: true
-  - name: v2ray1.udpgw.com
-    server: 104.26.7.171
-    port: 443
-    type: vmess
-    uuid: 77529b84-d32a-476e-956c-c2952c73a4a9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: v2ray1.udpgw.com
-    network: ws
-    ws-opts:
-      path: /worryfree
-      headers:
-        Host: v2ray1.udpgw.com
     udp: true
