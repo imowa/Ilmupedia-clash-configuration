@@ -132,8 +132,8 @@ proxy-providers:
     type: http
     path: ./proxies/sshkit.yaml
     url: https://raw.githubusercontent.com/lululoid/Ilmupedia-clash-configuration/main/sshkit.yaml
-    interval: 900
-    health-check:
+    interval: 900                                   
+    health-check:                                     
       enable: true
       interval: 180
       # lazy: true
@@ -145,13 +145,21 @@ proxy-groups:
     url: http://connect.rom.miui.com/generate_204
     use:
       - sshkit
-    proxies:                                              
+    proxies:
       - DIRECT
-      - BEST-PING 
+      - LOAD-BALANCE-SSHKIT
+      - BEST-PING
   - name: BEST-PING
     type: url-test
-    url: http://connect.rom.miui.com/generate_204       
-    interval: 180
+    url: http://connect.rom.miui.com/generate_204
+    interval: 120
+    use:
+      - sshkit
+  - name: LOAD-BALANCE-SSHKIT
+    type: load-balance
+    interval: 300
+    strategy: round-robin
+    url: http://connect.rom.miui.com/generate_204
     use:
       - sshkit
 rules:
