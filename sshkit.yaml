@@ -1,49 +1,50 @@
 proxies:
-  - name: Vmess Indonesia Herza Limit 2023-03-26
+  - name: Vmess Indonesia Herza Limit 2023-03-28
     server: 104.22.25.131
     port: 80
     type: vmess
-    uuid: 776ae610-c918-11ed-b439-205c6d5f5d78
+    uuid: 30b6a730-caba-11ed-b530-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false 
+    skip-cert-verify: false
     servername: id-1.0rd.net
     network: ws
     ws-opts:
-      path: /8m51pq3t
+      path: /fmwq2sve
       headers:
         Host: id-1.0rd.net
     udp: true
-  - name: sg-lb.vhax.net
+  - name: Vmess Singapore HE-1 2023-04-01
     server: 104.22.25.131
     port: 80
     type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    uuid: f5ee8670-cab9-11ed-b430-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true 
-    servername: sg-lb.vhax.net
+    skip-cert-verify: false
+    servername: sg-1.0rd.net
     network: ws
     ws-opts:
-      path: /sshkit/Goodboi/641a3427477e0/
+      path: /31vhdou8
       headers:
-        Host: sg-lb.vhax.net
+        Host: sg-1.0rd.net
     udp: true
-  - name: Vmess Singapore HE-1 2023-03-30
+  - name: sg1-v2ray.sshkit.org 
     server: 104.22.25.131
     port: 80
     type: vmess
-    uuid: c087efc0-c918-11ed-b033-205c6d5f5d78
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false 
-    servername: sg-1.0rd.net
+    servername: sg1-v2ray.sshkit.org
     network: ws
     ws-opts:
-      path: /t7m69lok
+      path: /sshkit/1678781623/64059f2f6b769/
       headers:
-        Host: sg-1.0rd.net
+        Host: sg1-v2ray.sshkit.org
     udp: true
+
