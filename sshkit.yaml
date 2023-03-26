@@ -1,5 +1,4 @@
 proxies:
-  proxies:
   - name: Vmess Indonesia Herza Limit 2023-03-29
     server: 104.22.25.131
     port: 80
