@@ -1,4 +1,20 @@
 proxies:
+  - name: v2ray3.udpgw.com
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: v2ray3.udpgw.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/vmess
+      headers:
+        Host: v2ray3.udpgw.com
+    udp: true
   - name: Vmess Indonesia Herza Limit 2023-03-29
     server: 104.22.25.131
     port: 80
