@@ -10,7 +10,7 @@ proxies:
     skip-cert-verify: true
     servername: v2ray3.udpgw.com    
     network: ws                                   
-    ws-opts:                                    
+    ws-opts:      
       path: GET-:ws://104.22.25.131/vmess       
       headers:
         Host: v2ray3.udpgw.com    
@@ -30,4 +30,4 @@ proxies:
       path: /sshkit/1678781623/64392a64c6c8e/
       headers:
         Host: sg1-v2ray.sshkit.org
-    udp: true
+        udp: true
