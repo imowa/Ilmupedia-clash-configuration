@@ -1,4 +1,20 @@
 proxies:
+  - name: v2ray3.udpgw.com
+    server: 104.22.25.131
+    port: 443
+    type: vmess
+    uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
+    alterId: 0
+    cipher: auto                                
+    tls: true
+    skip-cert-verify: true
+    servername: v2ray3.udpgw.com    
+    network: ws                                   
+    ws-opts:                                    
+      path: GET-:ws://104.22.25.131/vmess       
+      headers:
+        Host: v2ray3.udpgw.com    
+        udp: true
   - name: sg1-v2ray.sshkit.org
     server: 104.22.25.131
     port: 80
@@ -14,20 +30,4 @@ proxies:
       path: /sshkit/1678781623/64392a64c6c8e/
       headers:
         Host: sg1-v2ray.sshkit.org
-    udp: true
-  - name: v2ray3.udpgw.com
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: v2ray3.udpgw.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
-      headers:
-        Host: v2ray3.udpgw.com
     udp: true
