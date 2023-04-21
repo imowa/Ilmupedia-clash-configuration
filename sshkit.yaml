@@ -1,4 +1,20 @@
 proxies:
+  - name: sg-lb.vhax.net
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/Mamahhkhu/6442a38b38621/
+      headers:
+        Host: sg-lb.vhax.net
+    udp: true
   - name: sg4-v2ray.sshkit.org 17 Mei
     server: 104.22.25.131
     port: 80
@@ -14,22 +30,6 @@ proxies:
       path: /sshkit/1678781623/643d04d234a51/
       headers:
         Host: sg4-v2ray.sshkit.org
-    udp: true
-  - name: sg-lb.vhax.net
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sg-lb.vhax.net
-    network: ws
-    ws-opts:
-      path: /sshkit/Uhuie/643b80dc5ac7b/
-      headers:
-        Host: sg-lb.vhax.net
     udp: true
   - name: Vmess Singapore HE-1 2023-04-21
     server: 104.22.25.131
