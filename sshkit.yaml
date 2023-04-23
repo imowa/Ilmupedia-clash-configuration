@@ -31,38 +31,6 @@ proxies:
       headers:
         Host: sg4-v2ray.sshkit.org
     udp: true
-  - name: Vmess Singapore HE-1 2023-04-21
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: 6a3a7d70-dab8-11ed-b637-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sg-1.0rd.net
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.22.25.131/5q6139ze/vmess
-      headers:
-        Host: sg-1.0rd.net
-    udp: true
-  - name: v2ray3.udpgw.com
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: v2ray3.udpgw.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
-      headers:
-        Host: v2ray3.udpgw.com
-    udp: true
   - name: sg1-v2ray.sshkit.org
     server: 104.22.25.131
     port: 80
