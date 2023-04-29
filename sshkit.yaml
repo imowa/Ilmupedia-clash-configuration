@@ -7,11 +7,11 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/Hpheheded/64471f5f29d24/
+      path: /sshkit/Emetem/644c65338e24a/
       headers:
         Host: sg-lb.vhax.net
     udp: true
