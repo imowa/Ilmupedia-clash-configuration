@@ -11,7 +11,7 @@ proxies:
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/Dhbddd/644e0668eb43f/
+      path: /sshkit/Hellothere/644f3aae19a5b/
       headers:
         Host: sg-lb.vhax.net
     udp: true
