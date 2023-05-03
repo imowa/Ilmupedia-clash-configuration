@@ -1,4 +1,20 @@
 proxies:
+  - name: sshocean-crapoyssh
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: f9cba45f-c3a2-4239-b39b-0d7cb773843e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: sg2-ctb.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg2-ctb.v2rayserv.com
+    udp: true
   - name: sg-lb.vhax.net
     server: 104.22.25.131
     port: 80
