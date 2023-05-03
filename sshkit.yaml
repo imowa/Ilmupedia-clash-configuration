@@ -1,4 +1,20 @@
 proxies:
+  - name: dynamic-sg2b.obfs.xyz
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: 3010c578-8c71-4d37-917e-64df9f2b81a3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: dynamic-sg2b.obfs.xyz
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/vmess
+      headers:
+        Host: dynamic-sg2b.obfs.xyz
+    udp: true
   - name: sshocean-crapoyssh
     server: 104.22.25.131
     port: 80
