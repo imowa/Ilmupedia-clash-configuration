@@ -6,7 +6,7 @@ proxies:
     uuid: 43650a8e-4dd6-4f52-b9fc-a4f7ad860060
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: false
     servername: v2ray2.udpgw.com
     network: ws
