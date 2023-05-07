@@ -1,4 +1,20 @@
 proxies:
+  - name: v2ray2.udpgw.com
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: 43650a8e-4dd6-4f52-b9fc-a4f7ad860060
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: v2ray2.udpgw.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/vmess
+      headers:
+        Host: v2ray2.udpgw.com
+    udp: true
   - name: dynamic-sg2b.obfs.xyz
     server: 104.22.25.131
     port: 80
