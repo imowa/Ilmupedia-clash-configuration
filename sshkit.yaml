@@ -1,5 +1,21 @@
 proxies:
-  - name: us-lb.sshkit.org
+  - name: Vmess USA IPv4+IPv6 2023-05-22
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: 9ea161c0-f2bb-11ed-b238-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: us-14.0rd.net
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/4noigwhe
+      headers:
+        Host: us-14.0rd.net
+    udp: true
+  - name: us-lb.sshkit.org 22 mei
     server: 104.22.25.131
     port: 80
     type: vmess
@@ -7,92 +23,13 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     servername: us-lb.sshkit.org
     network: ws
     ws-opts:
-      path: /sshkit/Mamam/64582dd7088ad/
+      path: /sshkit/Mamama/646181e193824/
       headers:
         Host: us-lb.sshkit.org
-    udp: true
-  - name: opentunnel.net-dyhfhxhh
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-    alterId: 16
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /u/opentunnel.net-dyhfhxhh
-      headers:
-        Host: sgv-3.openv2ray.com
-    udp: true
-  - name: v2ray2.udpgw.com
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: 43650a8e-4dd6-4f52-b9fc-a4f7ad860060
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: v2ray2.udpgw.com
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
-      headers:
-        Host: v2ray2.udpgw.com
-    udp: true
-  - name: dynamic-sg2b.obfs.xyz
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: 3010c578-8c71-4d37-917e-64df9f2b81a3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: dynamic-sg2b.obfs.xyz
-    network: ws
-    ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
-      headers:
-        Host: dynamic-sg2b.obfs.xyz
-    udp: true
-  - name: sshocean-crapoyssh
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: f9cba45f-c3a2-4239-b39b-0d7cb773843e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sg2-ctb.v2rayserv.com
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: sg2-ctb.v2rayserv.com
-    udp: true
-  - name: sg-lb.vhax.net
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg-lb.vhax.net
-    network: ws
-    ws-opts:
-      path: /sshkit/Hellothere/644f3aae19a5b/
-      headers:
-        Host: sg-lb.vhax.net
     udp: true
   - name: sg4-v2ray.sshkit.org 17 Mei
     server: 104.22.25.131
@@ -109,20 +46,4 @@ proxies:
       path: /sshkit/1678781623/643d04d234a51/
       headers:
         Host: sg4-v2ray.sshkit.org
-    udp: true
-  - name: sg1-v2ray.sshkit.org
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg1-v2ray.sshkit.org
-    network: ws
-    ws-opts:
-      path: /sshkit/1678781623/64392a64c6c8e/
-      headers:
-        Host: sg1-v2ray.sshkit.org
     udp: true
