@@ -1,9 +1,9 @@
-proxies:
-  - name: Vmess USA IPv4+IPv6 2023-05-22
+ proxies:
+  - name: Vmess USA IPv4+IPv6 2023-05-28
     server: 104.22.25.131
     port: 80
     type: vmess
-    uuid: 9ea161c0-f2bb-11ed-b238-205c6d5f5d78
+    uuid: 07a3d570-f77f-11ed-b637-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
@@ -11,7 +11,7 @@ proxies:
     servername: us-14.0rd.net
     network: ws
     ws-opts:
-      path: GET-:ws://104.22.25.131/4noigwhe
+      path: GET-:ws://104.22.25.131/9u6invgp
       headers:
         Host: us-14.0rd.net
     udp: true
@@ -30,20 +30,4 @@ proxies:
       path: /sshkit/Mamama/646181e193824/
       headers:
         Host: us-lb.sshkit.org
-    udp: true
-  - name: sg4-v2ray.sshkit.org 17 Mei
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: sg4-v2ray.sshkit.org
-    network: ws
-    ws-opts:
-      path: /sshkit/1678781623/643d04d234a51/
-      headers:
-        Host: sg4-v2ray.sshkit.org
     udp: true
