@@ -1,4 +1,19 @@
  proxies:
+  - name: opentunnel.net-jfjfufucuf
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /u/opentunnel.net-jfjfufucuf
+      headers:
+        Host: usv-4.openv2ray.com
+    udp: true
   - name: Vmess USA IPv4+IPv6 2023-05-28
     server: 104.22.25.131
     port: 80
