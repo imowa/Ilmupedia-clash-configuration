@@ -1,4 +1,20 @@
  proxies:
+  - name: sshocean-imwild
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: 83e3133d-87f8-4d7d-81a2-637fec91f182
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: us6.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/vmess
+      headers:
+        Host: us6.v2rayserv.com
+    udp: true
   - name: sshocean-mommawantq
     server: 104.22.25.131
     port: 80
