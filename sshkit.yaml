@@ -1,4 +1,20 @@
  proxies:
+  - name: sshocean-samsaabah
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: a4855d5a-e9aa-4e0d-ae08-bbd1de43e0f7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vn1.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/vmess
+      headers:
+        Host: vn1.v2rayserv.com
+    udp: true
   - name: sshocean-imwild
     server: 104.22.25.131
     port: 80
