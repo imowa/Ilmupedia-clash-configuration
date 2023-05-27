@@ -1,4 +1,20 @@
  proxies:
+  - name: sshocean-mommawantq
+    server: 104.22.25.131
+    port: 80
+    type: vmess
+    uuid: c1b880e7-0d81-46bc-bd6b-32dbbd24e5dd
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: my1.v2rayserv.com
+    network: ws
+    ws-opts:
+      path: GET-:ws://104.22.25.131/vmess
+      headers:
+        Host: my1.v2rayserv.com
+    udp: true
   - name: us-lb.sshkit.org
     server: 104.22.25.131
     port: 80
