@@ -1,19 +1,19 @@
  proxies:
-  - name: erwin WS (CDN) NTLS 26 Juni
+  - name: hidessh
     server: 104.22.25.131
-    port: 80
+    port: 2082
     type: vmess
-    uuid: 979b1789-3c55-495e-90ed-14911bc326de
+    uuid: 0c0f16a6-1fed-4734-8623-836053c4de3b
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: warungvpn.hitsssh.com
+    servername: rjm-viprext.my.id
     network: ws
     ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
+      path: /worryfree
       headers:
-        Host: warungvpn.hitsssh.com
+        Host: rjm-viprext.my.id
     udp: true
   - name: sshocean-samsaabah
     server: 104.22.25.131
