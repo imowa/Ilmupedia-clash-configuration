@@ -15,21 +15,21 @@
       headers:
         Host: rjm-viprext.my.id
     udp: true
-  - name: sshocean-samsaabah
-    server: 104.22.25.131
+  - name: hidessh2
+    server: 104.26.7.171
     port: 80
     type: vmess
-    uuid: a4855d5a-e9aa-4e0d-ae08-bbd1de43e0f7
+    uuid: 0c0f16a6-1fed-4734-8623-836053c4de3b
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: vn1.v2rayserv.com
+    servername: rjm-viprext.my.id
     network: ws
     ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
+      path: /worryfree
       headers:
-        Host: vn1.v2rayserv.com
+        Host: rjm-viprext.my.id
     udp: true
   - name: sshocean-imwild
     server: 104.22.25.131
