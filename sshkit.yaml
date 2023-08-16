@@ -1,7 +1,7 @@
  proxies:
   - name: hidessh
-    server: 104.22.25.131
-    port: 2082
+    server: 104.16.51.111
+    port: 80
     type: vmess
     uuid: 0c0f16a6-1fed-4734-8623-836053c4de3b
     alterId: 0
