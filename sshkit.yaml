@@ -125,3 +125,19 @@
       headers:
         Host: us-14.0rd.net
     udp: true
+  - name: support.udemy.com
+    server: support.udemy.com
+    port: 443
+    type: trojan
+    password: 7d7002a0-3cdc-11ee-803a-1239d0255272
+    alterId: 16
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
