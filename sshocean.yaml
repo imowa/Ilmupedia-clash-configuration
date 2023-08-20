@@ -1,7 +1,7 @@
 proxies:
 - name: Trojan-GO
   type: trojan
-  server: rjm-viprext.my.id
+  server: 104.18.2.198
   port: 443
   password: c0db0007-ab2c-4c38-89ae-8236386c6be3
   network: trojan
@@ -19,14 +19,14 @@ proxies:
 
 - name: NEW FORMAT
   type: trojan
-  server: rjm-viprext.my.id
+  server: 104.18.2.198
   port: 443
   password: c0db0007-ab2c-4c38-89ae-8236386c6be3
   udp: true
-  sni: 104.22.24.131
+  sni: rjm-viprext.my.id
   alpn:
     - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: "/trojan"
+    path: "/hidessh-trojan"
