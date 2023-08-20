@@ -67,7 +67,7 @@
     server: 104.18.2.198
     port: 443
     type: trojan
-    uuid: dc6531c8-0933-45c3-a7b7-36ecb8cc1c9f
+    password: dc6531c8-0933-45c3-a7b7-36ecb8cc1c9f
     alterId: 0
     cipher: auto
     tls: false
@@ -83,7 +83,7 @@
     server: 104.21.12.204
     port: 443
     type: trojan
-    uuid: c0db0007-ab2c-4c38-89ae-8236386c6be3
+    password: c0db0007-ab2c-4c38-89ae-8236386c6be3
     alterId: 16
     cipher: auto
     tls: false
