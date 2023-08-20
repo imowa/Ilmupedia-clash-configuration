@@ -126,19 +126,19 @@
         Host: us-14.0rd.net
     udp: true
   - name: Trojan-GO
-	   type: trojan
-	   server: 104.21.12.204
-	   port: 443
-	   password: c0db0007-ab2c-4c38-89ae-8236386c6be3
-	   network: trojan
-	   sni: 104.21.12.204
-	   skip-cert-verify: true 
-	   unified-delay: true
-	   servername: rjm-viprext.my.id
-	   tls: true
-	   udp: true
-	   ws-opts:
-		   path: /hidessh-trojan
-		   headers:
-			   Host: rjm-viprext.my.id
+    type: trojan
+    server: 104.21.12.204
+    port: 443
+    password: c0db0007-ab2c-4c38-89ae-8236386c6be3
+    network: trojan
+    sni: 104.21.12.204
+    skip-cert-verify: true 
+    unified-delay: true
+    servername: rjm-viprext.my.id
+    tls: true
+    udp: true
+    ws-opts:
+    	path: /hidessh-trojan
+     	headers:
+      	  Host: rjm-viprext.my.id
     udp: true
