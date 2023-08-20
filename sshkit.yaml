@@ -32,7 +32,7 @@
         Host: rjm-viprext.my.id
     udp: true
   - name: hidessh3
-    server: 104.22.25.131
+    server: 104.22.24.131
     port: 80
     type: vmess
     uuid: 0c0f16a6-1fed-4734-8623-836053c4de3b
