@@ -65,7 +65,7 @@
     udp: true
   - name: trojanxl
     server: 104.18.2.198
-    port: 80
+    port: 443
     type: trojan
     uuid: dc6531c8-0933-45c3-a7b7-36ecb8cc1c9f
     alterId: 0
@@ -79,20 +79,20 @@
       headers:
         Host: id-qw1.estebuh.my.id
     udp: true
-  - name: opentunnel.net-stupidopentunnel
-    server: 104.22.25.131
-    port: 80
-    type: vmess
-    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+  - name: trojan204
+    server: 104.21.12.204
+    port: 443
+    type: trojan
+    uuid: c0db0007-ab2c-4c38-89ae-8236386c6be3
     alterId: 16
     cipher: auto
     tls: false
     skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-stupidopentunnel
+      path: /hidessh-trojan
       headers:
-        Host: auv-1.openv2ray.com
+        Host: rjm-viprext.my.id
     udp: true
   - name: opentunnel.net-jfjfufucuf
     server: 104.22.25.131
