@@ -47,21 +47,21 @@
       headers:
         Host: rjm-viprext.my.id
     udp: true
-  - name: sshocean-mommawantq
-    server: 104.22.25.131
+  - name: hidesshxl
+    server: 104.22.8.121
     port: 80
     type: vmess
-    uuid: c1b880e7-0d81-46bc-bd6b-32dbbd24e5dd
+    uuid: 5b33f948-b845-4937-8a25-1e2b5900ab0a
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: my1.v2rayserv.com
+    servername: melbi2.myserver-prem.cloud
     network: ws
     ws-opts:
-      path: GET-:ws://104.22.25.131/vmess
+      path: /vmess
       headers:
-        Host: my1.v2rayserv.com
+        Host: melbi2.myserver-prem.cloud
     udp: true
   - name: us-lb.sshkit.org
     server: 104.22.25.131
