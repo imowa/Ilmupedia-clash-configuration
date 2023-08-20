@@ -1,11 +1,11 @@
 proxies:
 - name: Trojan-GO
   type: trojan
-  server: 104.22.24.131
+  server: rjm-viprext.my.id
   port: 443
   password: c0db0007-ab2c-4c38-89ae-8236386c6be3
   network: trojan-go
-  sni: rjm-viprext.my.id
+  sni: 104.22.24.131
   skip-cert-verify: true 
   unified-delay: true
   servername: rjm-viprext.my.id
@@ -19,11 +19,11 @@ proxies:
 
 - name: NEW FORMAT
   type: trojan
-  server: 104.22.24.131
+  server: rjm-viprext.my.id
   port: 443
   password: c0db0007-ab2c-4c38-89ae-8236386c6be3
   udp: true
-  sni: rjm-viprext.my.id
+  sni: 104.22.24.131
   alpn:
     - http/1.1
   skip-cert-verify: true
