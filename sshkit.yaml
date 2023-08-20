@@ -136,7 +136,6 @@
     unified-delay: true
     servername: rjm-viprext.my.id
     tls: true
-    udp: true
     ws-opts:
       path: /hidessh-trojan
       headers:
