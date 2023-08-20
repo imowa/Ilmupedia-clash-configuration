@@ -70,7 +70,7 @@
     password: dc6531c8-0933-45c3-a7b7-36ecb8cc1c9f
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
     servername: id-qw1.estebuh.my.id
     network: ws
