@@ -12,7 +12,7 @@ proxies:
   tls: true
   udp: true
   ws-opts:
-     path: /xxxxxxxxxxxx
+     path: /hidessh-trojan
      headers:
        Host: rjm-viprext.my.id
   interface-name: eth1
