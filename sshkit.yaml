@@ -75,7 +75,7 @@
     servername: id-qw1.estebuh.my.id
     network: ws
     ws-opts:
-      path: /sshkit/Mamamamam/647095eb61983/
+      path: /trojan
       headers:
         Host: id-qw1.estebuh.my.id
     udp: true
