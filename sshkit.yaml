@@ -138,7 +138,7 @@
     tls: true
     udp: true
     ws-opts:
-    	 path: /hidessh-trojan
+      path: /hidessh-trojan
       headers:
       	  Host: rjm-viprext.my.id
     udp: true
