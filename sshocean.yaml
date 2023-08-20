@@ -4,7 +4,7 @@ proxies:
   server: rjm-viprext.my.id
   port: 443
   password: c0db0007-ab2c-4c38-89ae-8236386c6be3
-  network: trojan-go
+  network: trojan
   sni: 104.22.24.131
   skip-cert-verify: true 
   unified-delay: true
