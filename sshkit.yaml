@@ -16,20 +16,20 @@
         Host: rjm-viprext.my.id
     udp: true
   - name: hidessh2
-    server: 104.26.7.171
+    server: 104.16.51.111
     port: 80
     type: vmess
-    uuid: 0c0f16a6-1fed-4734-8623-836053c4de3b
+    uuid: f0ec19e8-de8f-4cc5-8d85-7de6d8e2ab77
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: rjm-viprext.my.id
+    servername: id-nusa3.estebuh.my.id
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /vmess
       headers:
-        Host: rjm-viprext.my.id
+        Host: id-nusa3.estebuh.my.id
     udp: true
   - name: hidessh3
     server: 104.22.24.131
@@ -51,17 +51,17 @@
     server: 104.22.8.121
     port: 80
     type: vmess
-    uuid: 5b33f948-b845-4937-8a25-1e2b5900ab0a
+    uuid: f0ec19e8-de8f-4cc5-8d85-7de6d8e2ab77
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: melbi2.myserver-prem.cloud
+    servername: id-nusa3.estebuh.my.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: melbi2.myserver-prem.cloud
+        Host: id-nusa3.estebuh.my.id
     udp: true
   - name: trojanxl
     server: 104.18.2.198
